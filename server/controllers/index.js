@@ -1,6 +1,7 @@
 const dbHelpers = require('../models/index.js');
 
 const controllers = {
+
     getItems: function(req, res) {
         dbHelpers.getItems((err, results) => {
             if (err) {

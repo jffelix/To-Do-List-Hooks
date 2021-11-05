@@ -1,6 +1,7 @@
 const db = require('../db/index.js');
 
 const dbHelpers = {
+    
     getItems: function(callback) {
         var queryStr = `SELECT * FROM shoppingList`;
 
