@@ -1,7 +1,7 @@
 const path = require("path");
 
-const DIST_Path = path.join(__dirname, "client/public");
-const SRC_Path = path.join(__dirname, "client/src");
+const DIST_Path = path.join(__dirname, "./build");
+const SRC_Path = path.join(__dirname, "./src");
 
 module.exports = {
   entry: `${SRC_Path}/index.js`,

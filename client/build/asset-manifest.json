@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/jffelix/To-Do-List-Hooksstatic/js/main.4e36fb8c.chunk.js",
+    "main.js.map": "/jffelix/To-Do-List-Hooksstatic/js/main.4e36fb8c.chunk.js.map",
+    "runtime-main.js": "/jffelix/To-Do-List-Hooksstatic/js/runtime-main.822613b7.js",
+    "runtime-main.js.map": "/jffelix/To-Do-List-Hooksstatic/js/runtime-main.822613b7.js.map",
+    "static/js/2.be63fa9c.chunk.js": "/jffelix/To-Do-List-Hooksstatic/js/2.be63fa9c.chunk.js",
+    "static/js/2.be63fa9c.chunk.js.map": "/jffelix/To-Do-List-Hooksstatic/js/2.be63fa9c.chunk.js.map",
+    "index.html": "/jffelix/To-Do-List-Hooksindex.html",
+    "static/js/2.be63fa9c.chunk.js.LICENSE.txt": "/jffelix/To-Do-List-Hooksstatic/js/2.be63fa9c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.822613b7.js",
+    "static/js/2.be63fa9c.chunk.js",
+    "static/js/main.4e36fb8c.chunk.js"
+  ]
+}
