@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HookComponent from './src/HookComponent.js';
+import HookComponent from './HookComponent.js';
 
 function App() {
     return (
         <div>
             <h1>To Do List (Hooks Version)</h1>
-            <HookComponent />
+            {/* <HookComponent /> */}
         </div>
     )
 }
