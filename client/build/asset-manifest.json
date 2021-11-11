@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.js": "/jffelix/To-Do-List-Hooksstatic/js/main.cae36865.chunk.js",
-    "main.js.map": "/jffelix/To-Do-List-Hooksstatic/js/main.cae36865.chunk.js.map",
-    "runtime-main.js": "/jffelix/To-Do-List-Hooksstatic/js/runtime-main.822613b7.js",
-    "runtime-main.js.map": "/jffelix/To-Do-List-Hooksstatic/js/runtime-main.822613b7.js.map",
-    "static/js/2.be63fa9c.chunk.js": "/jffelix/To-Do-List-Hooksstatic/js/2.be63fa9c.chunk.js",
-    "static/js/2.be63fa9c.chunk.js.map": "/jffelix/To-Do-List-Hooksstatic/js/2.be63fa9c.chunk.js.map",
+    "main.js": "/jffelix/To-Do-List-Hooksstatic/js/main.7d701b5f.chunk.js",
+    "main.js.map": "/jffelix/To-Do-List-Hooksstatic/js/main.7d701b5f.chunk.js.map",
+    "runtime-main.js": "/jffelix/To-Do-List-Hooksstatic/js/runtime-main.f9cb1c4f.js",
+    "runtime-main.js.map": "/jffelix/To-Do-List-Hooksstatic/js/runtime-main.f9cb1c4f.js.map",
+    "static/js/2.dbafe305.chunk.js": "/jffelix/To-Do-List-Hooksstatic/js/2.dbafe305.chunk.js",
+    "static/js/2.dbafe305.chunk.js.map": "/jffelix/To-Do-List-Hooksstatic/js/2.dbafe305.chunk.js.map",
     "index.html": "/jffelix/To-Do-List-Hooksindex.html",
-    "static/js/2.be63fa9c.chunk.js.LICENSE.txt": "/jffelix/To-Do-List-Hooksstatic/js/2.be63fa9c.chunk.js.LICENSE.txt"
+    "precache-manifest.93956c1cdf61b53500f3cce597bd7331.js": "/jffelix/To-Do-List-Hooksprecache-manifest.93956c1cdf61b53500f3cce597bd7331.js",
+    "service-worker.js": "/jffelix/To-Do-List-Hooksservice-worker.js",
+    "static/js/2.dbafe305.chunk.js.LICENSE.txt": "/jffelix/To-Do-List-Hooksstatic/js/2.dbafe305.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.822613b7.js",
-    "static/js/2.be63fa9c.chunk.js",
-    "static/js/main.cae36865.chunk.js"
+    "static/js/runtime-main.f9cb1c4f.js",
+    "static/js/2.dbafe305.chunk.js",
+    "static/js/main.7d701b5f.chunk.js"
   ]
 }

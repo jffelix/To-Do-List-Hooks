@@ -1,13 +1,13 @@
 const path = require("path");
 
-const DIST_Path = path.join(__dirname, "./build");
-const SRC_Path = path.join(__dirname, "./src");
+const DIST_Path = path.join(__dirname, "./client/build");
+const SRC_Path = path.join(__dirname, "./client/src");
 
 module.exports = {
   entry: `${SRC_Path}/index.js`,
   output: {
-    filename: "bundle.js",
     path: DIST_Path,
+    filename: "bundle.js"
   },
   module: {
     rules: [

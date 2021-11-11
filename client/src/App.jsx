@@ -1,5 +1,5 @@
 import React from 'react';
-import HookComponent from './components/HookComponent.js';
+import HookComponent from './components/HookComponent.jsx';
 
 function App() {
     return (
