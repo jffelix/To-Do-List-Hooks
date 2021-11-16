@@ -1,11 +1,11 @@
 import React from 'react';
-import HookComponent from './components/HookComponent.jsx';
+import InputForm from './components/InputForm.jsx';
 
 function App() {
     return (
         <div>
             <h1>To Do List (Hooks Version)</h1>
-            <HookComponent />
+            <InputForm />
         </div>
     )
 }
