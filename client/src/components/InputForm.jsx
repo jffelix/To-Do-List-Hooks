@@ -3,7 +3,14 @@ import React from 'react';
 function InputForm() {
     return (
         <div>
-            <h2>Hello from InputForm Component!</h2>
+            <form>
+                <h4>Item</h4>
+                <input name="itemName" />
+                <h4>Quantity</h4>
+                <input name="itemQuantity" />
+                <p> </p>
+                <button>Submit Item</button>
+            </form>
         </div>
     )
 }
