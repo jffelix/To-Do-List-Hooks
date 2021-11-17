@@ -6,22 +6,21 @@ function App() {
 
     const [itemList, setItemList] = useState([]);
 
+    useEffect(() => {
+        getFullList();
+    }, []);
+
     function getFullList() {
-    
         axios.get("/items")
         .then(response => {
-
-            // itemList = response.data;
-            console.log('itemList: ', itemList);
+            setItemList(response.data);
         })
         .catch(err => {
             console.log('Error recevied at getFullList in App component');
         })
     }
 
-    useEffect(() => {
-        getFullList();
-    })
+    console.log('itemList: ', itemList);
 
     return (
         <div>
