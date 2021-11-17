@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import App from '../App.jsx';
 
 function ItemList() {
+
+    const contextList = useContext(App.ItemListContext);
+
+    console.log("contextList: ", contextList);
 
     return (
         <div>

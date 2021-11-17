@@ -3,11 +3,13 @@ import InputForm from './components/InputForm.jsx';
 import ItemList from './components/ItemList.jsx';
 import axios from 'axios';
 
-export const UserContext = createContext();
+const ItemListContext = createContext();
 
 function App() {
 
-    const [fullItemList, setItemList] = useState([]);
+    App.ItemListContext = ItemListContext;
+
+    let [fullItemList, setItemList] = useState([]);
 
     useEffect(() => {
         getFullList();
@@ -29,7 +31,9 @@ function App() {
         <div>
             <h1>To Do List (Hooks Version)</h1>
             <InputForm />
-            <ItemList fullItemList={fullItemList} />
+            <ItemListContext.Provider value={fullItemList} >
+                <ItemList />
+            </ItemListContext.Provider>
         </div>
     )
 }
