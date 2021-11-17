@@ -5,7 +5,7 @@ function InputForm(event) {
     const [itemName, setItemName] = useState("");
     const [itemQuantity, setItemQuantity] = useState("");
 
-    function logTest(event) {
+    function handleInputSubmit(event) {
         event.preventDefault();
 
         var itemObj = {};
@@ -14,11 +14,13 @@ function InputForm(event) {
         itemObj.quantity = itemQuantity;
 
         console.log("itemObj: ", itemObj);
+
+        // need to clean out text from input tags after submitting
     }
 
     return (
         <div>
-            <form onSubmit={(event) => logTest(event)}>
+            <form onSubmit={(event) => handleInputSubmit(event)}>
                 <h4>Item</h4>
                 <input name="itemName" value={itemName} onChange={(event) => setItemName(event.target.value)} />
                 <h4>Quantity</h4>
