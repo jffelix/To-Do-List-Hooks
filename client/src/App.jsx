@@ -1,10 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, createContext } from 'react';
 import InputForm from './components/InputForm.jsx';
+import ItemList from './components/ItemList.jsx';
 import axios from 'axios';
+
+export const UserContext = createContext();
 
 function App() {
 
-    const [itemList, setItemList] = useState([]);
+    const [fullItemList, setItemList] = useState([]);
 
     useEffect(() => {
         getFullList();
@@ -20,12 +23,13 @@ function App() {
         })
     }
 
-    console.log('itemList: ', itemList);
+    console.log('fullItemList: ', fullItemList);
 
     return (
         <div>
             <h1>To Do List (Hooks Version)</h1>
             <InputForm />
+            <ItemList fullItemList={fullItemList} />
         </div>
     )
 }

@@ -4,7 +4,7 @@ function ItemList() {
 
     return (
         <div>
-            <h3>Hello from ItemList! </h3>
+            <h3>Hello from ItemList!</h3>
         </div>
     )
 }
