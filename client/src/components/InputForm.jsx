@@ -1,9 +1,16 @@
 import React from 'react';
 
-function InputForm() {
+function InputForm(event) {
+
+    function logTest(event) {
+        event.preventDefault();
+
+        console.log('You clicked submit!');
+    }
+
     return (
         <div>
-            <form>
+            <form onSubmit={(event) => logTest(event)}>
                 <h4>Item</h4>
                 <input name="itemName" />
                 <h4>Quantity</h4>
