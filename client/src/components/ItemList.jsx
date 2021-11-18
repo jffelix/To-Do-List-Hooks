@@ -8,7 +8,7 @@ function ItemList() {
 
     ItemList.contextList = contextList;
 
-    console.log("contextList: ", contextList);
+    // console.log("contextList: ", contextList);
 
     return (
         <div>

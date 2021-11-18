@@ -10,7 +10,7 @@ function ItemListEntry(props) {
             <p>{props.item.id}</p>
             <p>{props.item.name}</p>
             <p>{props.item.quantity}</p>
-            <p>___________________________________</p>
+            <p>________________________________________</p>
         </div>
     )
 
