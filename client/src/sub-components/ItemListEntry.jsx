@@ -9,6 +9,8 @@ function ItemListEntry(props) {
         <div>
             <p>{props.item.name}</p>
             <p>{props.item.quantity}</p>
+            <button>Update Item</button>
+            <button>Delete Item</button>
             <p>________________________________________</p>
         </div>
     )

@@ -27,7 +27,6 @@ function App() {
     }
 
     function addNewItem(newItem) {
-
         // var newItem = InputForm.itemObjPush;
         console.log('newItem: ', newItem);
 
