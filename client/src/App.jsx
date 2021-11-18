@@ -28,8 +28,7 @@ function App() {
 
     function addNewItem() {
         console.log('InputForm.itemObjPush: ', InputForm.itemObjPush);
-
-        setItemList(prevArray => [...prevArray, InputForm.itemObjPush]);
+        // setItemList(prevArray => [...prevArray, InputForm.itemObjPush]);
     }
 
     console.log('fullItemList: ', fullItemList);

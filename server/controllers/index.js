@@ -12,6 +12,22 @@ const controllers = {
                 console.log('Successfully connected from getItems in controllers!');
             }
         })
+    },
+
+    postItem: function(req, res) {
+
+        var postObj = req.body;
+        console.log('postObj: ', postObj);
+
+        dbHelpers.postItem(postObj, (err, results) => {
+            if (err) {
+                res.status(400).send(err);
+                console.log('Error received at postItem in controllers.');
+            } else {
+                res.status(200).send(results);
+                console.log('Successfully connected from postItem in controllers!');
+            }
+        })
     }
 }
 
