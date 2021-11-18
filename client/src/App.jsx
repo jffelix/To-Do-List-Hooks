@@ -25,6 +25,10 @@ function App() {
         })
     }
 
+    // function addNewItem() {
+        
+    // }
+
     console.log('fullItemList: ', fullItemList);
 
     return (

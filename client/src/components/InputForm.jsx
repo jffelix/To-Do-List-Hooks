@@ -4,6 +4,7 @@ function InputForm(event) {
 
     const [itemName, setItemName] = useState("");
     const [itemQuantity, setItemQuantity] = useState("");
+    const [itemObjPush, setItemObjPush] = useState([]);
 
     function handleInputSubmit(event) {
         event.preventDefault();
@@ -13,8 +14,10 @@ function InputForm(event) {
         itemObj.item = itemName;
         itemObj.quantity = itemQuantity;
 
-        console.log("itemObj: ", itemObj);
-
+        setItemObjPush(itemObj);
+        
+        console.log('itemObj: ', itemObj);
+        console.log("itemObjPush: ", itemObjPush);
         // need to clean out text from input tags after submitting
     }
 
