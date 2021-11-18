@@ -16,8 +16,8 @@ const dbHelpers = {
         })
     },
 
-    postItem: function(callback) {
-        var queryStr = `INSERT INTO shoppingList (name, quantity) VALUES '${postObj.name}', ${postObj.quantity}`;
+    postItem: function(postObj, callback) {
+        var queryStr = `INSERT INTO shoppingList (name, quantity) VALUES ('${postObj.name}', ${postObj.quantity})`;
 
         db.query(queryStr, (err, results) => {
             if (err) {

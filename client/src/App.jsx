@@ -27,8 +27,18 @@ function App() {
     }
 
     function addNewItem() {
-        console.log('InputForm.itemObjPush: ', InputForm.itemObjPush);
+
+        var newItem = InputForm.itemObjPush;
+        console.log('newItem: ', newItem);
         // setItemList(prevArray => [...prevArray, InputForm.itemObjPush]);
+
+        axios.post("/items", newItem)
+        .then(response => {
+            console.log('response.data: ', response.data);
+        })
+        .catch(err => {
+            console.log('Error received during Axios POST request: ', err);
+        })
     }
 
     console.log('fullItemList: ', fullItemList);
