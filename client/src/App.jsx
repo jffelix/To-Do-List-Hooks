@@ -8,6 +8,7 @@ const ItemListContext = createContext();
 function App() {
 
     App.ItemListContext = ItemListContext;
+    App.addNewItem = addNewItem;
 
     let [fullItemList, setItemList] = useState([]);
 
@@ -25,9 +26,9 @@ function App() {
         })
     }
 
-    // function addNewItem() {
-        
-    // }
+    function addNewItem() {
+        console.log('InputForm.itemObjPush: ', InputForm.itemObjPush);
+    }
 
     console.log('fullItemList: ', fullItemList);
 

@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import App from '../App.jsx';
 
 function InputForm(event) {
 
     const [itemName, setItemName] = useState("");
     const [itemQuantity, setItemQuantity] = useState("");
     const [itemObjPush, setItemObjPush] = useState([]);
+
+    InputForm.itemObjPush = itemObjPush;
 
     function handleInputSubmit(event) {
         event.preventDefault();
@@ -18,6 +21,9 @@ function InputForm(event) {
         
         console.log('itemObj: ', itemObj);
         console.log("itemObjPush: ", itemObjPush);
+
+        App.addNewItem();
+
         // need to clean out text from input tags after submitting
     }
 
