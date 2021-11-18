@@ -1,15 +1,20 @@
 import React, { useContext } from 'react';
 import App from '../App.jsx';
+import ItemListEntry from '../sub-components/ItemListEntry.jsx';
 
 function ItemList() {
 
     const contextList = useContext(App.ItemListContext);
 
+    ItemList.contextList = contextList;
+
     console.log("contextList: ", contextList);
 
     return (
         <div>
-            <h3>Hello from ItemList!</h3>
+            {contextList.map((item, index) =>
+                <ItemListEntry item={item} key={index} />
+            )}
         </div>
     )
 }
