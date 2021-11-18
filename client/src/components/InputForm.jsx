@@ -21,7 +21,7 @@ function InputForm(event) {
         
         console.log('itemObj: ', itemObj);
         // console.log("itemObjPush: ", itemObjPush);
-        App.addNewItem();
+        App.addNewItem(itemObj);
 
         // need to clean out text from input tags after submitting
     }
