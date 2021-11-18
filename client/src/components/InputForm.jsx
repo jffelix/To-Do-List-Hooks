@@ -14,14 +14,13 @@ function InputForm(event) {
 
         var itemObj = {};
 
-        itemObj.item = itemName;
+        itemObj.name = itemName;
         itemObj.quantity = itemQuantity;
 
         setItemObjPush(itemObj);
         
         console.log('itemObj: ', itemObj);
-        console.log("itemObjPush: ", itemObjPush);
-
+        // console.log("itemObjPush: ", itemObjPush);
         App.addNewItem();
 
         // need to clean out text from input tags after submitting
