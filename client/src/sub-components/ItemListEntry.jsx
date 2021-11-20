@@ -5,12 +5,17 @@ function ItemListEntry(props) {
 
     // const contextListEntry = useContext(ItemList.contextList);
 
+    function DeleteItem(event) {
+        event.preventDefault();
+        console.log('props.item.id: ', props.item.id);
+    }
+
     return (
         <div>
             <p>{props.item.name}</p>
             <p>{props.item.quantity}</p>
             <button>Update Item</button>
-            <button>Delete Item</button>
+            <button onClick={(event) => DeleteItem(event)}>Delete Item</button>
             <p>________________________________________</p>
         </div>
     )
