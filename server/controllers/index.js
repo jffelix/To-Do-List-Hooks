@@ -28,6 +28,20 @@ const controllers = {
                 console.log('Successfully connected from postItem in controllers!');
             }
         })
+    },
+
+    deleteItem: function(req, res) {
+        var deleteObj = req.params;
+
+        dbHelpers.deleteItem(deleteObj, (err, results) => {
+            if (err) {
+                res.status(400).send(err);
+                console.log('Error received at deleteItem in controllers.');
+            } else {
+                res.status(200).send(results);
+                console.log('Successfully connected from deleteItem in controllers!');
+            }
+        })
     }
 }
 
