@@ -8,7 +8,16 @@ function ItemListEntry(props) {
 
     function DeleteItem(event) {
         event.preventDefault();
-        console.log('props.item.id: ', props.item.id);
+        var selectedItemId = props.item.id;
+        // console.log('props.item.id: ', props.item.id);
+
+        axios.delete(`/items/${selectedItemId}`)
+        .then(() => {
+            console.log('Successfully connected with Axios DELETE request!');
+        })
+        .catch((err) => {
+            console.log('Error received during Axios DELETE request.')
+        })
     }
 
     return (
