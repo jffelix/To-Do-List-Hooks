@@ -33,6 +33,8 @@ const controllers = {
     deleteItem: function(req, res) {
         var deleteObj = req.params;
 
+        console.log('deleteObj: ', deleteObj);
+
         dbHelpers.deleteItem(deleteObj, (err, results) => {
             if (err) {
                 res.status(400).send(err);

@@ -7,7 +7,7 @@ function ItemListEntry(props) {
     // const contextListEntry = useContext(ItemList.contextList);
 
     function DeleteItem(event) {
-        event.preventDefault();
+        // event.preventDefault();
         var selectedItemId = props.item.id;
         // console.log('props.item.id: ', props.item.id);
 
