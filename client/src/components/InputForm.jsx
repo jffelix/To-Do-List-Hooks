@@ -10,7 +10,7 @@ function InputForm(event) {
     InputForm.itemObjPush = itemObjPush;
 
     function handleInputSubmit(event) {
-        event.preventDefault();
+        // event.preventDefault();
 
         var itemObj = {};
 

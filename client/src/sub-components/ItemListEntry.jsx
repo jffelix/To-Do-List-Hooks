@@ -4,12 +4,10 @@ import App from '../App.jsx';
 import axios from 'axios';
 
 function ItemListEntry(props) {
-
     // const contextListEntry = useContext(ItemList.contextList);
 
     function DeleteItem(event) {
         var selectedItemId = props.item.id;
-        // console.log('props.item.id: ', props.item.id);
 
         axios.delete(`/items/${selectedItemId}`)
         .then(() => {
