@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import ItemList from '../components/ItemList.jsx';
+import App from '../App.jsx';
 import axios from 'axios';
 
 function ItemListEntry(props) {
@@ -7,12 +8,12 @@ function ItemListEntry(props) {
     // const contextListEntry = useContext(ItemList.contextList);
 
     function DeleteItem(event) {
-        // event.preventDefault();
         var selectedItemId = props.item.id;
         // console.log('props.item.id: ', props.item.id);
 
         axios.delete(`/items/${selectedItemId}`)
         .then(() => {
+            App.getFullList();
             console.log('Successfully connected with Axios DELETE request!');
         })
         .catch((err) => {

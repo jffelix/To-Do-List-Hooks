@@ -9,6 +9,7 @@ function App() {
 
     App.ItemListContext = ItemListContext;
     App.addNewItem = addNewItem;
+    App.getFullList = getFullList;
 
     let [fullItemList, setItemList] = useState([]);
 
