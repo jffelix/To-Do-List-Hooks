@@ -30,6 +30,21 @@ const dbHelpers = {
         })
     },
 
+    updateItem: function(updateObj, callback) {
+        var queryStr = ``;
+
+        db.query(queryStr, (err, results) => {
+            if (err) {
+                callback(err);
+                console.log('Error received at updateItem in models.');
+            } else {
+                callback(null, results);
+                console.log('Successfully connected from updateItem in models!');
+            }
+        })
+
+    },
+
     deleteItem: function(deleteObj, callback) {
         var queryStr = `DELETE FROM shoppingList WHERE id = ${deleteObj.id}`;
 
