@@ -5,16 +5,20 @@ import axios from 'axios';
 
 function ItemListEntry(props) {
     // const contextListEntry = useContext(ItemList.contextList);
-
     let [toggleUpdate, setToggleUpdate] = useState(false);
 
-    function UpdateItem(event) {
-        var selectedItemId = props.item.id;
-        console.log('selectedItemId: ', selectedItemId);
-
+    function clickUpdate() {
         setToggleUpdate(prevState => !prevState);
 
         console.log('toggleUpdate: ', toggleUpdate);
+    }
+
+    function UpdateItem(event) {
+        var selectedItemId = props.item.id;
+
+        console.log('selectedItemId: ', selectedItemId);
+
+        clickUpdate();
     }
 
     function DeleteItem(event) {
@@ -30,15 +34,30 @@ function ItemListEntry(props) {
         })
     }
 
-    return (
-        <div>
-            <p>{props.item.name}</p>
-            <p>{props.item.quantity}</p>
-            <button onClick={(event) => UpdateItem(event)}>Update Item</button>
-            <button onClick={(event) => DeleteItem(event)}>Delete Item</button>
-            <p>________________________________________</p>
-        </div>
-    )
+    if (!toggleUpdate) {
+
+        return (
+            <div>
+                <p>{props.item.name}</p>
+                <p>{props.item.quantity}</p>
+                <button onClick={(event) => clickUpdate(event)}>Update Item</button>
+                <button onClick={(event) => DeleteItem(event)}>Delete Item</button>
+                <p>________________________________________</p>
+            </div>
+        )
+
+    } else {
+
+        return (
+            <div>
+                <input />
+                <input />
+                <button onClick={(event) => UpdateItem(event)}>Submit Update</button>
+                <button onClick={(event) => clickUpdate(event)}>Cancel</button>
+            </div>
+        )
+
+    }
 
 }
 
