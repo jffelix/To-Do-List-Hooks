@@ -6,17 +6,23 @@ import axios from 'axios';
 function ItemListEntry(props) {
     // const contextListEntry = useContext(ItemList.contextList);
     let [toggleUpdate, setToggleUpdate] = useState(false);
+    const [updateInputName, setUpdateInputName] = useState("");
+    const [updateInputQuantity, setUpdateInputQuantity] = useState("");
 
     function clickUpdate() {
         setToggleUpdate(prevState => !prevState);
-
-        console.log('toggleUpdate: ', toggleUpdate);
+        // console.log('toggleUpdate: ', toggleUpdate);
     }
 
     function UpdateItem(event) {
         var selectedItemId = props.item.id;
+        // console.log('selectedItemId: ', selectedItemId);
+        var updateObj = {};
 
-        console.log('selectedItemId: ', selectedItemId);
+        updateObj.name = updateInputName;
+        updateObj.quantity = updateInputQuantity;
+
+        console.log('updateObj: ', updateObj);
 
         clickUpdate();
     }
@@ -50,12 +56,13 @@ function ItemListEntry(props) {
 
         return (
             <div>
-                <input />
-                <input />
+                <input value={updateInputName} onChange={(event) => setUpdateInputName(event.target.value)} />
+                <input value={updateInputQuantity} onChange={(event) => setUpdateInputQuantity(event.target.value)} />
                 <p> </p>
                 <button onClick={(event) => UpdateItem(event)}>Submit Update</button>
                 <p> </p>
                 <button onClick={(event) => clickUpdate(event)}>Cancel</button>
+                <p>________________________________________</p>
             </div>
         )
 
