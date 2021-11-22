@@ -30,6 +30,20 @@ const controllers = {
         })
     },
 
+    updateItem: function(req, res) {
+        var updateObj = req.body;
+
+        dbHelpers.updateItem(updateObj, (err, results) => {
+            if (err) {
+                res.status(400).send(err);
+                console.log('Error received at updateItem in controllers.');
+            } else {
+                res.status(200).send(results);
+                console.log('Successfully connected from updateItem in controllers!');
+            }
+        })
+    },
+
     deleteItem: function(req, res) {
         var deleteObj = req.params;
 
