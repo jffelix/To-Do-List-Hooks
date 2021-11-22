@@ -1,11 +1,11 @@
 # To-Do-List-Hooks
 
-Welcome to my To-do List (Hooks Version)! This application is my introduction into learning React Hooks while acting as a refresher for my mySQL skills.
+Welcome to my To-do List (Hooks Version)! This application is my introduction into learning React Hooks while acting as a refresher for my MySQL skills.
 
 Goals
 
 - Utilize React Hooks
-- Use mySQL as a database
+- Use MySQL as a database
 - Implement TDD
 
 # How to run the application
