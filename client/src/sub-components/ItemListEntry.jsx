@@ -19,10 +19,19 @@ function ItemListEntry(props) {
         // console.log('selectedItemId: ', selectedItemId);
         var updateObj = {};
 
+        updateObj.id = selectedItemId;
         updateObj.name = updateInputName;
         updateObj.quantity = updateInputQuantity;
+        // console.log('updateObj: ', updateObj);
 
-        console.log('updateObj: ', updateObj);
+        axios.put(`/items/${selectedItemId}`, updateObj)
+        .then(() => {
+            App.getFullList();
+            console.log('Successfully connected with Axios PUT request!');
+        })
+        .catch(err => {
+            console.log('Error received during Axios PUT request')
+        })
 
         clickUpdate();
     }
