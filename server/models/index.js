@@ -31,7 +31,7 @@ const dbHelpers = {
     },
 
     updateItem: function(updateObj, callback) {
-        var queryStr = ``;
+        var queryStr = `UPDATE shoppingList SET name = '${updateObj.name}', quantity = ${updateObj.quantity} WHERE id = ${updateObj.id}`;
 
         db.query(queryStr, (err, results) => {
             if (err) {
