@@ -52,7 +52,9 @@ function ItemListEntry(props) {
             <div>
                 <input />
                 <input />
+                <p> </p>
                 <button onClick={(event) => UpdateItem(event)}>Submit Update</button>
+                <p> </p>
                 <button onClick={(event) => clickUpdate(event)}>Cancel</button>
             </div>
         )
