@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import ItemList from '../components/ItemList.jsx';
 import App from '../App.jsx';
 import axios from 'axios';
@@ -6,9 +6,15 @@ import axios from 'axios';
 function ItemListEntry(props) {
     // const contextListEntry = useContext(ItemList.contextList);
 
+    let [toggleUpdate, setToggleUpdate] = useState(false);
+
     function UpdateItem(event) {
         var selectedItemId = props.item.id;
         console.log('selectedItemId: ', selectedItemId);
+
+        setToggleUpdate(prevState => !prevState);
+
+        console.log('toggleUpdate: ', toggleUpdate);
     }
 
     function DeleteItem(event) {
