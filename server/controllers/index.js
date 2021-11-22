@@ -33,8 +33,6 @@ const controllers = {
     updateItem: function(req, res) {
         var updateObj = req.body;
 
-        console.log('updateObj: ', updateObj);
-
         dbHelpers.updateItem(updateObj, (err, results) => {
             if (err) {
                 res.status(400).send(err);

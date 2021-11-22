@@ -4,26 +4,22 @@ import App from '../App.jsx';
 import axios from 'axios';
 
 function ItemListEntry(props) {
-    // const contextListEntry = useContext(ItemList.contextList);
     let [toggleUpdate, setToggleUpdate] = useState(false);
     const [updateInputName, setUpdateInputName] = useState("");
     const [updateInputQuantity, setUpdateInputQuantity] = useState("");
 
     function clickUpdate() {
         setToggleUpdate(prevState => !prevState);
-        // console.log('toggleUpdate: ', toggleUpdate);
     }
 
     function UpdateItem(event) {
         var selectedItemId = props.item.id;
-        // console.log('selectedItemId: ', selectedItemId);
         var updateObj = {};
 
         updateObj.id = selectedItemId;
         updateObj.name = updateInputName;
         updateObj.quantity = updateInputQuantity;
         // console.log('updateObj: ', updateObj);
-
         axios.put(`/items/${selectedItemId}`, updateObj)
         .then(() => {
             App.getFullList();

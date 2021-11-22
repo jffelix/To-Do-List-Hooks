@@ -7,3 +7,11 @@ Goals
 - Utilize React Hooks
 - Use SQL as a database
 - Implement TDD
+
+# How to run the application
+
+- Fork over this repository to your GitHub account.
+- Run "git clone" command in Terminal to copy the repository to your personal computer.
+- Open VS Code with your cloned repository.
+- Run "npm start" and "npm run build" in seperate terminals.
+- Go to Google Chrome and use localhost:3000.
