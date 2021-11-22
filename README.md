@@ -5,7 +5,7 @@ Welcome to my To-do List (Hooks Version)! This application is my introduction in
 Goals
 
 - Utilize React Hooks
-- Use SQL as a database
+- Use mySQL as a database
 - Implement TDD
 
 # How to run the application
