@@ -6,6 +6,7 @@ Goals
 
 - Utilize React Hooks
 - Use MySQL as a database
+- Use Flexbox for styling
 
 # How to run the application
 
