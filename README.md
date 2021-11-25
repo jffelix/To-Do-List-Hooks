@@ -6,7 +6,6 @@ Goals
 
 - Utilize React Hooks
 - Use MySQL as a database
-- Implement TDD
 
 # How to run the application
 

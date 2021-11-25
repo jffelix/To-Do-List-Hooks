@@ -1,7 +1,7 @@
 // const { iteratee } = require('lodash');
 // const { describe } = requirejs(['yargs']);
-const chai = requirejs(['chai']);
 
+const chai = requirejs(['chai']);
 const express = requirejs(['express']);
 
 // // const expect = chai.expect();
