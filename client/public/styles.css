@@ -23,3 +23,17 @@ body {
 .quantity {
     padding: 10px;
 }
+
+.buttons {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.updateItem {
+    padding: 5px;
+}
+
+.deleteItem {
+    padding: 5px;
+}

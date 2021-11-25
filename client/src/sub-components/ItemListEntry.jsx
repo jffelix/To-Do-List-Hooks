@@ -59,8 +59,14 @@ function ItemListEntry(props) {
                         <p>{props.item.quantity}</p>
                     </div>
                 </div>
-                <button onClick={(event) => clickUpdate(event)}>Update Item</button>
-                <button onClick={(event) => DeleteItem(event)}>Delete Item</button>
+                <div className="buttons">
+                    <div className="updateItem">
+                        <button onClick={(event) => clickUpdate(event)}>Update Item</button>
+                    </div>
+                    <div className="deleteItem">
+                        <button onClick={(event) => DeleteItem(event)}>Delete Item</button>
+                    </div>
+                </div>
             </div>
         )
 
