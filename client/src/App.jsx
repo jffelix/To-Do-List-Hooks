@@ -3,6 +3,8 @@ import InputForm from './components/InputForm.jsx';
 import ItemList from './components/ItemList.jsx';
 import axios from 'axios';
 
+import '../public/styles.css';
+
 const ItemListContext = createContext();
 
 function App() {
