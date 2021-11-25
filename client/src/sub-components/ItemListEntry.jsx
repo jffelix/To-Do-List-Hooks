@@ -3,6 +3,8 @@ import ItemList from '../components/ItemList.jsx';
 import App from '../App.jsx';
 import axios from 'axios';
 
+import '../../public/styles.css';
+
 function ItemListEntry(props) {
     let [toggleUpdate, setToggleUpdate] = useState(false);
     const [updateInputName, setUpdateInputName] = useState("");
@@ -48,19 +50,20 @@ function ItemListEntry(props) {
     if (!toggleUpdate) {
 
         return (
-            <div>
-                <p>{props.item.name}</p>
-                <p>{props.item.quantity}</p>
+            <div className="itemEntry">
+                <div className="itemEntryP">
+                    <p>{props.item.name}</p>
+                    <p>{props.item.quantity}</p>
+                </div>
                 <button onClick={(event) => clickUpdate(event)}>Update Item</button>
                 <button onClick={(event) => DeleteItem(event)}>Delete Item</button>
-                <p>________________________________________</p>
             </div>
         )
 
     } else {
 
         return (
-            <div>
+            <div className="itemEntry">
                 <input value={updateInputName} onChange={(event) => setUpdateInputName(event.target.value)} />
                 <input value={updateInputQuantity} onChange={(event) => setUpdateInputQuantity(event.target.value)} />
                 <p> </p>
