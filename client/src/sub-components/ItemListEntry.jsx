@@ -52,8 +52,12 @@ function ItemListEntry(props) {
         return (
             <div className="itemEntry">
                 <div className="itemEntryP">
-                    <p>{props.item.name}</p>
-                    <p>{props.item.quantity}</p>
+                    <div className="name">
+                        <p>{props.item.name}</p>
+                    </div>
+                    <div className="quantity">
+                        <p>{props.item.quantity}</p>
+                    </div>
                 </div>
                 <button onClick={(event) => clickUpdate(event)}>Update Item</button>
                 <button onClick={(event) => DeleteItem(event)}>Delete Item</button>
