@@ -39,11 +39,13 @@ body {
 }
 
 .nameInput input{
+    padding: 5px;
     border-style: none;
     border-bottom: solid;
 }
 
 .quantityInput input {
+    padding: 5px;
     border-style: none;
     border-bottom: solid;
     margin-bottom: 20px;
@@ -129,6 +131,32 @@ body {
     background-color: transparent;
     color: rgb(230, 6, 25);
     border-style: none;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 20px;
+}
+
+.changeItem input {
+    padding: 10px;
+    background-color: transparent;
+    border-style: none;
+    border-bottom: solid;
+    margin-top: 10px;
+}
+
+.changeItem input::placeholder {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 20px;
+}
+
+.changeQuantity input {
+    padding: 10px;
+    background-color: transparent;
+    border-style: none;
+    border-bottom: solid;
+    margin-bottom: 20px;    
+}
+
+.changeQuantity input::placeholder {
     font-family: 'Gochi Hand', cursive;
     font-size: 20px;
 }

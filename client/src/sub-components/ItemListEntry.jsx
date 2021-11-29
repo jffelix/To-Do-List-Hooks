@@ -75,8 +75,12 @@ function ItemListEntry(props) {
         return (
             <div className="itemEntry">
                 <div className="inputFields">
-                    <input value={updateInputName} onChange={(event) => setUpdateInputName(event.target.value)} />
-                    <input value={updateInputQuantity} onChange={(event) => setUpdateInputQuantity(event.target.value)} />
+                    <div className="changeItem">
+                        <input value={updateInputName} onChange={(event) => setUpdateInputName(event.target.value)} placeholder="name"/>
+                    </div>
+                    <div className="changeQuantity">
+                        <input value={updateInputQuantity} onChange={(event) => setUpdateInputQuantity(event.target.value)} placeholder="quantity"/>
+                    </div>
                 </div>
                 <div className="inputButtons">
                     <div className="submitUpdate">
