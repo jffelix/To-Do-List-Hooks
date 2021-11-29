@@ -19,8 +19,11 @@ body {
 } */
 
 .title {
-    background-color: white;
-    padding: 20px;
+    /* background-color: white; */
+    background-image: url("https://clipartbarn.com/wp-content/uploads/2017/02/Sticky-note-clip-art-2-image.png");
+    background-size: cover;
+    font-family: 'Gochi Hand', cursive;
+    padding: 50px;
     border-radius: 20px;
     margin: 30px;
 }

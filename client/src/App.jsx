@@ -51,7 +51,8 @@ function App() {
         <div className="main">
             <div className="titleInput">
                 <div className="title">
-                    <h1>To Do List (Hooks Version)</h1>
+                    <h1>To Do List</h1>
+                    <h1>(Hooks Version)</h1>
                 </div>
                 <div className="inputForm">
                     <InputForm />
