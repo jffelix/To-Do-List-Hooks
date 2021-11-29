@@ -61,10 +61,10 @@ function ItemListEntry(props) {
                 </div>
                 <div className="buttons">
                     <div className="updateItem">
-                        <button onClick={(event) => clickUpdate(event)}>Update Item</button>
+                        <button onClick={(event) => clickUpdate(event)}>Update Entry</button>
                     </div>
                     <div className="deleteItem">
-                        <button onClick={(event) => DeleteItem(event)}>Delete Item</button>
+                        <button onClick={(event) => DeleteItem(event)}>Delete Entry</button>
                     </div>
                 </div>
             </div>

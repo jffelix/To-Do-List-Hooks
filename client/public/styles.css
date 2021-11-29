@@ -36,6 +36,8 @@ body {
     background-color: rgb(252, 252, 157);
     background-image: url("https://cdn.wallpapersafari.com/55/46/WdVkNU.jpg");
     background-size: cover;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 30px;
     padding: 20px;
     border-radius: 20px;
     margin: 30px;
@@ -63,16 +65,34 @@ body {
     padding: 10px;
 }
 
+/* button {
+    background-color: transparent;
+    color: rgb(230, 6, 25);
+    border-style: none;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 20px;
+} */
+
 .buttons {
     padding: 5px;
     display: flex;
     flex-direction: column;
 }
 
-.updateItem {
+.updateItem button {
     padding: 5px;
+    background-color: transparent;
+    color: rgb(230, 6, 25);
+    border-style: none;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 20px;
 }
 
-.deleteItem {
+.deleteItem button {
     padding: 5px;
+    background-color: transparent;
+    color: rgb(230, 6, 25);
+    border-style: none;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 20px;
 }
