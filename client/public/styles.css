@@ -92,7 +92,7 @@ body {
 .updateItem button {
     padding: 5px;
     background-color: transparent;
-    color: rgb(230, 6, 25);
+    color: rgb(244, 14, 252);
     border-style: none;
     font-family: 'Gochi Hand', cursive;
     font-size: 20px;
@@ -108,7 +108,7 @@ body {
 }
 
 .submitUpdate button {
-    padding: 5px;
+    padding: 10px;
     background-color: transparent;
     color: rgb(6, 10, 230);
     border-style: none;
@@ -117,9 +117,9 @@ body {
 }
 
 .cancel button {
-    padding: 5px;
+    padding: 10px;
     background-color: transparent;
-    color: rgb(225, 10, 245);
+    color: rgb(245, 10, 100);
     border-style: none;
     font-family: 'Gochi Hand', cursive;
     font-size: 20px;

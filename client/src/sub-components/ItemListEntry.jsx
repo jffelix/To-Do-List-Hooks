@@ -78,7 +78,6 @@ function ItemListEntry(props) {
                     <input value={updateInputName} onChange={(event) => setUpdateInputName(event.target.value)} />
                     <input value={updateInputQuantity} onChange={(event) => setUpdateInputQuantity(event.target.value)} />
                 </div>
-                <p> </p>
                 <div className="inputButtons">
                     <div className="submitUpdate">
                         <button onClick={(event) => UpdateItem(event)}>Submit Update</button>
