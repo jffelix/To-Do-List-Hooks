@@ -49,13 +49,19 @@ function App() {
 
     return (
         <div className="main">
-            <div>
-                <h1>To Do List (Hooks Version)</h1>
-                <InputForm />
+            <div className="titleInput">
+                <div className="title">
+                    <h1>To Do List (Hooks Version)</h1>
+                </div>
+                <div className="inputForm">
+                    <InputForm />
+                </div>
             </div>
-            <ItemListContext.Provider value={fullItemList} >
-                <ItemList />
-            </ItemListContext.Provider>
+            <div className="itemList">
+                <ItemListContext.Provider value={fullItemList} >
+                    <ItemList />
+                </ItemListContext.Provider>
+            </div>
         </div>
     )
 }
