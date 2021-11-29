@@ -34,6 +34,8 @@ body {
 
 .itemList {
     background-color: rgb(252, 252, 157);
+    background-image: url("https://cdn.wallpapersafari.com/55/46/WdVkNU.jpg");
+    background-size: cover;
     padding: 20px;
     border-radius: 20px;
     margin: 30px;
