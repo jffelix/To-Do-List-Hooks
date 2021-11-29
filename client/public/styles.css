@@ -32,6 +32,16 @@ body {
     margin: 30px;
 }
 
+.inputFields {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputButtons {
+    display: flex;
+    flex-direction: column;
+}
+
 .itemList {
     background-color: rgb(252, 252, 157);
     background-image: url("https://cdn.wallpapersafari.com/55/46/WdVkNU.jpg");
@@ -92,6 +102,24 @@ body {
     padding: 5px;
     background-color: transparent;
     color: rgb(230, 6, 25);
+    border-style: none;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 20px;
+}
+
+.submitUpdate button {
+    padding: 5px;
+    background-color: transparent;
+    color: rgb(6, 10, 230);
+    border-style: none;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 20px;
+}
+
+.cancel button {
+    padding: 5px;
+    background-color: transparent;
+    color: rgb(225, 10, 245);
     border-style: none;
     font-family: 'Gochi Hand', cursive;
     font-size: 20px;

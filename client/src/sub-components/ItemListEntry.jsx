@@ -74,13 +74,19 @@ function ItemListEntry(props) {
 
         return (
             <div className="itemEntry">
-                <input value={updateInputName} onChange={(event) => setUpdateInputName(event.target.value)} />
-                <input value={updateInputQuantity} onChange={(event) => setUpdateInputQuantity(event.target.value)} />
+                <div className="inputFields">
+                    <input value={updateInputName} onChange={(event) => setUpdateInputName(event.target.value)} />
+                    <input value={updateInputQuantity} onChange={(event) => setUpdateInputQuantity(event.target.value)} />
+                </div>
                 <p> </p>
-                <button onClick={(event) => UpdateItem(event)}>Submit Update</button>
-                <p> </p>
-                <button onClick={(event) => clickUpdate(event)}>Cancel</button>
-                <p>________________________________________</p>
+                <div className="inputButtons">
+                    <div className="submitUpdate">
+                        <button onClick={(event) => UpdateItem(event)}>Submit Update</button>
+                    </div>
+                    <div className="cancel">
+                        <button onClick={(event) => clickUpdate(event)}>Cancel</button>
+                    </div>
+                </div>
             </div>
         )
 
