@@ -12,6 +12,9 @@ function ItemList() {
 
     return (
         <div>
+            <div>
+                <h2>Item List</h2>
+            </div>
             {contextList.map((item, index) =>
                 <ItemListEntry item={item} key={index} />
             )}

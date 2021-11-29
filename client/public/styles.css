@@ -5,6 +5,12 @@ body {
     background-image: url("https://wallpaperaccess.com/full/2797527.jpg");
 }
 
+.main {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
 .itemEntry {
     display: flex;
     flex-direction: column;

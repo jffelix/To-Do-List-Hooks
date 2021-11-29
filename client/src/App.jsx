@@ -48,10 +48,11 @@ function App() {
     console.log('fullItemList: ', fullItemList);
 
     return (
-        <div>
-            <h1>To Do List (Hooks Version)</h1>
-            <InputForm />
-            <h2>Item List</h2>
+        <div className="main">
+            <div>
+                <h1>To Do List (Hooks Version)</h1>
+                <InputForm />
+            </div>
             <ItemListContext.Provider value={fullItemList} >
                 <ItemList />
             </ItemListContext.Provider>
