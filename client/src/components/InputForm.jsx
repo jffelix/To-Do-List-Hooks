@@ -27,14 +27,19 @@ function InputForm(event) {
     }
 
     return (
-        <div>
+        <div className="inputForm">
             <form onSubmit={(event) => handleInputSubmit(event)}>
-                <h4>Item</h4>
-                <input name="itemName" value={itemName} onChange={(event) => setItemName(event.target.value)} />
-                <h4>Quantity</h4>
-                <input name="itemQuantity" value={itemQuantity} onChange={(event) => setItemQuantity(event.target.value)} />
-                <p> </p>
-                <button>Submit Item</button>
+                <div className="nameInput">
+                    <h4>Item</h4>
+                    <input name="itemName" value={itemName} onChange={(event) => setItemName(event.target.value)} />
+                </div>
+                <div className="quantityInput">
+                    <h4>Quantity</h4>
+                    <input name="itemQuantity" value={itemQuantity} onChange={(event) => setItemQuantity(event.target.value)} />
+                </div>
+                <div className="submitItem">
+                    <button>Submit Item</button>
+                </div>
             </form>
         </div>
     )

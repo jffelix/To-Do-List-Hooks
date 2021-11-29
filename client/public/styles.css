@@ -24,15 +24,38 @@ body {
     background-size: cover;
     font-family: 'Gochi Hand', cursive;
     padding: 50px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     margin: 30px;
 }
 
 .inputForm {
     background-color: white;
+    background-size: cover;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 26px;
     padding: 20px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     margin: 30px;
+}
+
+.nameInput input{
+    border-style: none;
+    border-bottom: solid;
+}
+
+.quantityInput input {
+    border-style: none;
+    border-bottom: solid;
+    margin-bottom: 20px;
+}
+
+.submitItem button {
+    padding: 5px;
+    background-color: transparent;
+    color: rgb(60, 31, 189);
+    border-style: none;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 24px;  
 }
 
 .inputFields {

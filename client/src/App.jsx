@@ -54,7 +54,7 @@ function App() {
                     <h1>To Do List</h1>
                     <h1>(Hooks Version)</h1>
                 </div>
-                <div className="inputForm">
+                <div>
                     <InputForm />
                 </div>
             </div>
